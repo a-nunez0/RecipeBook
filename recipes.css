@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+
+:root {
+  --primary-color: #1B98E0;
+  --secondary-color: #59c3c3;
+  --text-dark: #333;
+  --text-light: #ebebeb;
+  --primary-font: Arial, Helvetica, sans-serif;
+  --secondary-font: "Amatic SC", cursive;
+}
+
+@media (min-width: 768px) {
+    header {
+      justify-content: flex-start;
+      padding: 1rem 2rem;
+    }
+  
+    header h1 {
+      font-size: 3rem;
+    }
+  
+    main {
+      align-items: center;
+    }
+}
+  
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--primary-font);
+  color: var(--text-dark);
+  background-color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+header img {
+  height: 50px;
+}
+
+header h1 {
+  font-family: var(--secondary-font);
+  font-size: 2.5rem;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.search form {
+  display: flex;
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.search input {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px 0 0 5px;
+}
+
+.search button {
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search button img {
+  height: 20px;
+  width: 20px;
+}
+
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 900px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: auto;
+}
+
+.recipe-info {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.recipe-info h2 {
+  font-family: var(--secondary-font);
+  font-size: 2rem;
+}
+
+.category {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  align-self: flex-start;
+}
+
+.rating {
+  font-size: 1.2rem;
+  display: flex;
+  gap: 2px;
+  margin: 0.5rem 0;
+}
+
+.icon-star {
+  color: gold;
+}
+
+.icon-star-empty {
+  color: #ccc;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+}
+
+footer .social {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+footer .social img {
+  height: 24px;
+}
